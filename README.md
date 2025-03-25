@@ -99,3 +99,32 @@
     uv remove --script main.py XXX
     ```
 
+### install ruff (Code lint)
+
+* installed with uv (recommended)
+
+    1. Install Ruff globally.
+    ```
+    uv tool install ruff@latest
+    ```
+
+    2. Or add Ruff to your project.
+    ```
+    uv add ruff
+    ```
+
+* 檢查是否符合規則
+    檢查 [ruff.toml#tool.ruff.lint](pyproject.toml#tool.ruff.lint)
+    ```
+    ruff check
+    ```
+
+* 修復符合規則
+    ```
+    ruff check --fix
+    ```
+
+* 檢查修復格式
+    ```
+    ruff format
+    ```
