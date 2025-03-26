@@ -128,3 +128,23 @@
     ```
     ruff format
     ```
+
+
+### install pre-commit
+
+* installed with pre-commit
+
+    1. Install globally.
+    ```
+    uv tool install pre-commit
+    ```
+
+    2. Or add Ruff to your project.
+    ```
+    uv add pre-commit
+    ```
+
+* 連結 pre-commit hooks (根據 .pre-commit-config.yaml) 
+    ```
+    pre-commit install
+    ```
